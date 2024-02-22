@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="e891d2e0-4ed2-409a-9684-8b7c6832e5b0" name="qidianxiaoshuo" url="https://github.com/rgrgtgrf/qidianxiaoshuo.git">
+        <fileTransfer accessType="WEBDAV" port="6180">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
