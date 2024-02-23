@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.Mapper.NovelMapper">
+    <select id="list" resultType="com.example.pojo.Novel">
+        select * from qd_novel
+        <where>
+            <if test="qdClass!=null">
+                qd_class=#{qdClass}
+            </if>
+            <if test="qdName!=null">
+                and qd_name like concat('%',#{qdName},'%')
+            </if>
+        </where>
+    </select>
+</mapper>
